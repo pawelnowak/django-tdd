@@ -1,9 +1,18 @@
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
-browser = webdriver.Firefox()
-browser.get('http://localhost:8000/')
+from django.test import LiveServerTestCase
 
-body = browser.find_element_by_tag_name('body')
-assert 'Django' in body.text
+class AdminTest(LiveServerTestCase):
 
-browser.quit()
+    def setUp(self):
+        self.browser = webdriver.Firefox()
+
+    def tearDown(self):
+        self.browser.quit()
+
+    def test_admin_site(self):
+        # user opens web browser, navigates to admin page
+        self.browser.get(self.live_server_url + '/admin/')
+        body = self.browser.find_element_by_tag_name('body')
+        self.assertIn('Django administration', body.text)
