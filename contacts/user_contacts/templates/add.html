@@ -16,8 +16,7 @@
     <br>
     <form action="/create" method ="POST" role="form">
         {% csrf_token %}
-        {{ person__form.as_p }}
-        {{ phone_form.as_p }}
+        {{ person_form.as_p }}
         <input type ="submit" name ="Submit" class="btn btn-default" value ="Add">
     </form>
       <br>
