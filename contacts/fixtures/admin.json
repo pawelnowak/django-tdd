@@ -1,0 +1,38 @@
+[
+{
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "admin", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2015-02-06T09:06:11.206Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$lXb2TGImn6UJ$aS+Ie3QVPqrJVhXsvDY4gz/RJWAgVi37aZ9oUb8GK/g=", 
+    "email": "pawel@pawelnowak.com", 
+    "date_joined": "2015-02-06T09:06:11.206Z"
+  }
+},
+{
+  "pk": 2,
+  "model": "auth.user",
+  "fields": {
+    "username": "live",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": false,
+    "last_login": "2013-12-29T03:49:13.545Z",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$12000$VtsgwjQ1BZ6u$zwnG+5E5cl8zOnghahArLHiMC6wGk06HXrlAijFFpSA=",
+    "email": "live@forever.com",
+    "date_joined": "2013-12-29T03:49:13.545Z"
+  }
+}
+]
