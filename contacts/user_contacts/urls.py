@@ -4,4 +4,5 @@ from user_contacts.views import *
 
 urlpatterns = patterns('',
       url(r'^$', home),
+      url(r'^all/$', all_contacts),
 )
